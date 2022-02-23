@@ -639,6 +639,34 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: #55c57a; }
+  @media (max-width: 56.25em) {
+    .popup {
+      height: 100%; }
+      .popup__content {
+        width: 85%;
+        display: block;
+        overflow: hidden; }
+      .popup__left {
+        width: 100%;
+        height: 20vh;
+        display: inline-block; }
+      .popup__right {
+        width: 100%;
+        display: block; }
+      .popup__img {
+        max-width: 50%;
+        display: block;
+        float: left;
+        object-fit: cover;
+        height: 20vh; }
+      .popup__text {
+        -moz-column-count: 1;
+        column-count: 1; } }
+  @media (max-width: 37.5em) {
+    .popup__left {
+      height: 0; }
+    .popup__img {
+      display: none; } }
 
 .section-about {
   background-color: #f7f7f7;
